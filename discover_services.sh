@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SERVICES=("nhập dịch vụ cần monitor trạng thái service")
+SERVICES=("mysql")
 
 if [[ "$1" == "discover" ]]; then
     echo -n '{"data":['
