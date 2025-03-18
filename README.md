@@ -1,0 +1,1 @@
+# zabbix-script-auto-monitor-service
