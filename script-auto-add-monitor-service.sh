@@ -6,13 +6,13 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-echo "🚀 Bắt đầu tạo cấu hình UserParameter cho Zabbix Agent..."
+echo "🚀 Bắt đầu thêm cấu hình UserParameter vào Zabbix Agent..."
 
 # Kiểm tra xem Zabbix Agent đã được cài chưa
 if ! command -v zabbix_agentd &> /dev/null
 then
-    echo "📦 Zabbix Agent chưa được cài đặt, bắt đầu cài đặt..."
-    apt update && apt install -y zabbix-agent
+    echo "❌ Zabbix Agent chưa được cài đặt. Vui lòng cài đặt Zabbix Agent trước khi chạy script này."
+    exit 1
 else
     echo "✅ Zabbix Agent đã được cài đặt."
 fi
