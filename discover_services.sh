@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SERVICES=("nginx" "mysql" "apache2" "ssh" "cron")
+SERVICES=("mysql")
 
 if [[ "$1" == "discover" ]]; then
     echo -n '{"data":['
