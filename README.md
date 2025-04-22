@@ -1,5 +1,5 @@
 # zabbix-script-auto-monitor-service
-#Cai dat zabbix-agent link:
+## Cai dat zabbix-agent link:
 https://www.zabbix.com/download
 #Tao thư mục script
 mkdir /etc/zabbix/scripts/
